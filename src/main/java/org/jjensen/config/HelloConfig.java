@@ -11,20 +11,20 @@ import org.springframework.context.annotation.Profile;
  */
 @Configuration
 public class HelloConfig {
-    @Bean
-    public HelloWorldFactory helloWorldFactory(){
-        return new HelloWorldFactory();
-    }
+//    @Bean
+//    public HelloWorldFactory helloWorldFactory(){
+//        return new HelloWorldFactory();
+//    }
 
-    @Bean
-    @Profile("english")
-    public HelloWorldService helloWorldServiceEnglish(HelloWorldFactory factory){
-        return factory.createHelloWorldService("en");
-    }
+//    @Bean
+//    @Profile("english")
+//    public HelloWorldService helloWorldServiceEnglish(HelloWorldFactory factory){
+//        return factory.createHelloWorldService("en");
+//    }
 
-    @Bean
-    @Profile("spanish")
-    public HelloWorldService helloWorldServiceSpanish(HelloWorldFactory factory){
-        return factory.createHelloWorldService("es");
-    }
+//    @Bean
+//    @Profile("spanish")
+//    public HelloWorldService helloWorldServiceSpanish(HelloWorldFactory factory){
+//        return factory.createHelloWorldService("es");
+//    }
 }
